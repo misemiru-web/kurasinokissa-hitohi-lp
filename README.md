@@ -10,7 +10,7 @@ Instagramに分散している店舗の魅力・食・佐潟・ワークショ�
 
 ## 主なCTA
 
-- Instagramで最新の営業日を見る
+- 最新の営業日を見る（公式Instagram）
 - Googleマップで場所を見る
 
 ## 技術方針
@@ -19,8 +19,22 @@ Instagramに分散している店舗の魅力・食・佐潟・ワークショ�
 - React
 - TypeScript
 - CSS
+- App Router
 - Static Export
 - Mobile First
+
+## 開発・確認
+
+```bash
+npm install
+npm run dev
+npm run lint
+npm run build
+```
+
+- `npm run build` で静的ファイルを `out/` に出力します。
+- 店舗情報・商品情報・CTA URLは `lib/site-data.ts`、各セクションは `components/` で管理します。
+- GoogleマップURLは、店舗住所「〒950-2261 新潟県新潟市西区赤塚1566」を検索するリンクです。
 
 ## 参照資料
 
