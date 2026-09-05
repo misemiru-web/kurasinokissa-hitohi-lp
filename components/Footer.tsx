@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { InstagramIcon } from "@/components/Icons";
+import { assetPath } from "@/lib/asset-path";
 import { externalLinks } from "@/lib/site-data";
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
       <div className="container footer__inner">
         <a className="footer__logo" href="#top" aria-label="ページ先頭へ戻る">
           <Image
-            src="/images/logo/footer-logo.png"
+            src={assetPath("/images/logo/footer-logo.png")}
             alt="暮らしの喫茶 HITOHI"
             width={2172}
             height={724}

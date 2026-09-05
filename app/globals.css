@@ -944,7 +944,7 @@ a.button--secondary:hover {
 
   .section--sakata .sakata-photo--sub {
     height: 190px;
-    background-image: url("/images/sakata/16_lotus_blossoms.jpg");
+    background-image: var(--sakata-lotus-image);
     background-position: 62% center;
     background-repeat: no-repeat;
     background-size: 116% auto;

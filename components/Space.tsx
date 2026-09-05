@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CtaLinks } from "@/components/CtaLinks";
+import { assetPath } from "@/lib/asset-path";
 
 export function Space() {
   return (
@@ -18,7 +19,7 @@ export function Space() {
         <div className="space-gallery">
           <figure className="space-gallery__large" data-reveal data-reveal-delay="3">
             <Image
-              src="/images/about/08_cafe_counter.jpg"
+              src={assetPath("/images/about/08_cafe_counter.jpg")}
               alt="花と木のテーブルがあるカウンター前"
               fill
               sizes="(min-width: 768px) 60vw, 100vw"
@@ -26,7 +27,7 @@ export function Space() {
           </figure>
           <figure className="space-gallery__small" data-reveal data-reveal-delay="4">
             <Image
-              src="/images/space/09_cafe_interior.jpg"
+              src={assetPath("/images/space/09_cafe_interior.jpg")}
               alt="木の建具と暮らしの品が並ぶ店内"
               fill
               sizes="(min-width: 768px) 40vw, 100vw"

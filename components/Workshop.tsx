@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CtaLinks } from "@/components/CtaLinks";
+import { assetPath } from "@/lib/asset-path";
 import { workshopExamples } from "@/lib/site-data";
 
 export function Workshop() {
@@ -26,7 +27,7 @@ export function Workshop() {
         <div className="workshop-gallery" aria-label="籐編みの手仕事" data-reveal data-reveal-delay="3">
           <figure className="workshop-gallery__main">
             <Image
-              src="/images/workshop/18_rattan_weaving_workshop.jpg"
+              src={assetPath("/images/workshop/18_rattan_weaving_workshop.jpg")}
               alt="籐のラウンドプレートを編む手元"
               fill
               sizes="(min-width: 768px) 45vw, 100vw"

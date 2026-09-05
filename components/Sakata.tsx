@@ -1,5 +1,7 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import { CtaLinks } from "@/components/CtaLinks";
+import { assetPath } from "@/lib/asset-path";
 
 export function Sakata() {
   return (
@@ -18,15 +20,24 @@ export function Sakata() {
         </div>
         <figure className="sakata-photo sakata-photo--main" data-reveal data-reveal-delay="4">
           <Image
-            src="/images/sakata/13_sakata_lake_sunset.jpg"
+            src={assetPath("/images/sakata/13_sakata_lake_sunset.jpg")}
             alt="夕焼けに染まる佐潟の水辺"
             fill
             sizes="(min-width: 768px) 65vw, 100vw"
           />
         </figure>
-        <figure className="sakata-photo sakata-photo--sub" data-reveal data-reveal-delay="5">
+        <figure
+          className="sakata-photo sakata-photo--sub"
+          data-reveal
+          data-reveal-delay="5"
+          style={
+            {
+              "--sakata-lotus-image": `url("${assetPath("/images/sakata/16_lotus_blossoms.jpg")}")`,
+            } as CSSProperties
+          }
+        >
           <Image
-            src="/images/sakata/16_lotus_blossoms.jpg"
+            src={assetPath("/images/sakata/16_lotus_blossoms.jpg")}
             alt="佐潟に咲く蓮の花"
             fill
             sizes="(min-width: 768px) 28vw, 100vw"

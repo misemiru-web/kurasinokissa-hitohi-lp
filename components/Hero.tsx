@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { CtaLinks } from "@/components/CtaLinks";
+import { assetPath } from "@/lib/asset-path";
 
 export function Hero() {
   return (
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="hero__media">
         <Image
-          src="/images/hero/hitohi-hero-background.jpg"
+          src={assetPath("/images/hero/hitohi-hero-background.jpg")}
           alt="佐潟を望む窓辺に、サンドとスープ、コーヒーが並ぶ風景"
           fill
           priority

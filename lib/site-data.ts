@@ -1,3 +1,5 @@
+import { assetPath } from "@/lib/asset-path";
+
 export const externalLinks = {
   instagram: "https://www.instagram.com/hitohi_bloom8/",
   googleMaps:
@@ -9,28 +11,28 @@ export const menuItems = [
     name: "カンパーニュサンド",
     description:
       "薪窯パン舎ほほのパンに、野菜をたっぷり重ねたサンドです。",
-    image: "/images/food/02_campagne_sandwich.jpg",
+    image: assetPath("/images/food/02_campagne_sandwich.jpg"),
     position: "center",
   },
   {
     name: "平飼いたまごサンド",
     description:
       "平飼いたまごを使った、素材の味わいを楽しめるサンドです。",
-    image: "/images/food/03_egg_sandwich.jpg",
+    image: assetPath("/images/food/03_egg_sandwich.jpg"),
     position: "center",
   },
   {
     name: "デーツあんバターサンド",
     description:
       "ほほのパンにデーツあんとバターを合わせたサンドです。",
-    image: "/images/food/04_dates_anbutter_sandwich.jpg",
+    image: assetPath("/images/food/04_dates_anbutter_sandwich.jpg"),
     position: "center",
   },
   {
     name: "薪窯焼きチーズケーキ",
     description:
       "薪窯で焼き上げた、静かな喫茶時間に寄り添うおやつです。",
-    image: "/images/food/05_wood_oven_cheesecake.jpg",
+    image: assetPath("/images/food/05_wood_oven_cheesecake.jpg"),
     position: "center",
   },
 ] as const;
@@ -56,22 +58,22 @@ export const features = [
 export const workshopExamples = [
   {
     name: "籐のラウンドプレート編み",
-    image: "/images/workshop/17_rattan_trays.jpg",
+    image: assetPath("/images/workshop/17_rattan_trays.jpg"),
     alt: "籐で編まれた大小のラウンドプレート",
   },
   {
     name: "籐のバングル＆チャーム",
-    image: "/images/workshop/19_rattan_bracelet_charms.jpg",
+    image: assetPath("/images/workshop/19_rattan_bracelet_charms.jpg"),
     alt: "籐で編まれたバングルとチャーム",
   },
   {
     name: "籐のコースター編み",
-    image: "/images/workshop/14_rattan_coasters.jpg",
+    image: assetPath("/images/workshop/14_rattan_coasters.jpg"),
     alt: "花のような形に編まれた籐のコースター",
   },
   {
     name: "籐の小物づくり",
-    image: "/images/workshop/15_rattan_accessories_flatlay.jpg",
+    image: assetPath("/images/workshop/15_rattan_accessories_flatlay.jpg"),
     alt: "籐で編まれたアクセサリーと小物",
   },
 ] as const;

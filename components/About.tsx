@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CtaLinks } from "@/components/CtaLinks";
+import { assetPath } from "@/lib/asset-path";
 import { features } from "@/lib/site-data";
 
 export function About() {
@@ -19,7 +20,7 @@ export function About() {
         <div className="about-gallery" aria-label="店内の様子" data-reveal data-reveal-delay="3">
           <figure className="about-gallery__main">
             <Image
-              src="/images/about/08_cafe_counter.jpg"
+              src={assetPath("/images/about/08_cafe_counter.jpg")}
               alt="木のカウンターと白壁の店内"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
@@ -27,7 +28,7 @@ export function About() {
           </figure>
           <figure className="about-gallery__sub">
             <Image
-              src="/images/about/12_lifestyle_goods.jpg"
+              src={assetPath("/images/about/12_lifestyle_goods.jpg")}
               alt="木の棚に並ぶ暮らしの道具"
               fill
               sizes="(min-width: 768px) 20vw, 42vw"

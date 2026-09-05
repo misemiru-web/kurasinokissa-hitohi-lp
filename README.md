@@ -34,6 +34,8 @@ npm run build
 
 - `npm run build` で静的ファイルを `out/` に出力します。
 - 店舗情報・商品情報・CTA URLは `lib/site-data.ts`、各セクションは `components/` で管理します。
+- `public/` 配下の画像URLは `lib/asset-path.ts` の `assetPath()` を通して参照します。
+- GitHub Pages用ビルドでは `NEXT_PUBLIC_BASE_PATH=/kurasinokissa-hitohi-lp` を設定します（GitHub Actionsでは設定済み）。
 - GoogleマップURLは、店舗住所「〒950-2261 新潟県新潟市西区赤塚1566」を検索するリンクです。
 
 ## 参照資料

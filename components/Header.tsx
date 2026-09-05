@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { InstagramIcon, PinIcon } from "@/components/Icons";
+import { assetPath } from "@/lib/asset-path";
 import { externalLinks } from "@/lib/site-data";
 
 const navigation = [
@@ -55,7 +56,7 @@ export function Header() {
         <div className="header-inner">
           <a className="header-logo" href="#top" aria-label="ページ先頭へ戻る">
             <Image
-              src="/images/logo/header-logo.png"
+              src={assetPath("/images/logo/header-logo.png")}
               alt="暮らしの喫茶 HITOHI"
               width={2172}
               height={724}
